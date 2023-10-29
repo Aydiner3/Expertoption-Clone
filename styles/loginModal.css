@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.login-container {
+  display:none;
+  position: fixed;
+  top: 35%;
+  left: 30%;
+  background-color: #394768;
+  height: 360px;
+  width: 680px;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+}
+.login-modal-slider {
+  width: 280px;
+  background: transparent;
+}
+.login-modal-form {
+  flex: 1;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.login-modal-header-link {
+  display: flex;
+  gap: 32px;
+  color: white;
+}
+.login-modal-header-link span {
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  color: rgb(245, 245, 245);
+  transition: all 0.2s;
+}
+.login-modal-header-link span:hover {
+  color:#a2adc3;
+}
+.login-modal-input {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 30px;
+  gap: 24px;
+}
+.login-modal-input input {
+  height: 36px;
+  border-radius: 4px;
+  background-color: #20293e;
+  border: 0.5px solid transparent;
+  background-color: #242d44;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 2px 0px inset,
+    rgba(37, 158, 250, 0) 0px 0px 0px 1px inset;
+  color: rgb(245, 245, 245);
+  padding-left: 10px;
+  flex-grow:0;
+  transition: all 0.2s linear;
+}
+.login-modal-input input:hover{
+    border:0.5px solid #a2adc3;
+}
+.login-modal-input input:focus {
+  outline: 1.5px solid #2676b9;
+}
+.login-modal-input input::placeholder {
+  color: #a2adc3;
+  padding-left: 12px;
+}
+.login-modal-input div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-modal-input div a {
+  color: #a2adc3;
+  text-decoration: none;
+  font-size: 12px;
+}
+.login-modal-input button {
+  color: rgb(245, 245, 245);
+  background-color: #3096f0;
+  padding: 12px 30px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+}
+.login-modal-auth-container{
+    display:flex;
+    gap:14px;
+}
+.login-modal-auth-container button {
+  display:flex;
+  justify-content: center;
+  width:31%;
+  align-items: center;
+  gap:8px;
+  color: rgb(245, 245, 245);
+  background-color: #3096f0;
+  padding: 12px 30px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+}
+.login-modal-auth-container button img{
+  width:16px;
+  height:16px;
+}
+.login-modal-close-icon{
+  position: absolute;
+  top:-42px;
+  right: -42px;
+  color:white;
+  background-color: transparent;
+  border:none;
+}
