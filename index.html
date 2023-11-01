@@ -36,15 +36,15 @@
             </div>
         </div>
         <!-- end of menu -->
-        <div class="main-container">
-            <!-- header -->
+        <!-- header -->
+        <div class="header-container">
             <header class="header">
                 <div class="header-icons">
                     <img src="https://tr.expertoption.com/img/icons/svg-icon/burger.svg" class="header-burger-icon">
                     <div class="header-flag-container">
                         <img src="https://static.expertoption.com/flags/2.0/png-optimized/tr.png?v=12" class="header-flag-icon">
                         <!-- language modal -->
-                        <div class="language-modal-container">
+                        <div class="language-modal-container" isActive="false">
                             <a href="https://expertoption.com/">
                                 <img class="flag-icon css-1c162z7" alt="English" src="https://static.expertoption.com/flags/2.0/png-optimized/en.png?v=12">
                                 English
@@ -130,7 +130,9 @@
                     </div>
                 </div>
                 <div class="header-logo-container">
-                    <img src="./images/expertLogo.svg" alt="logo " class="header-logo">
+                    <a href="/">
+                        <img src="./images/expertLogo.svg" alt="logo " class="header-logo">
+                    </a>
                     <img src="https://tr.expertoption.com/img/logos/ExpertOption/eo-logo.svg" alt="logo " class="header-logo-mobile">
                 </div>
                 <div class="header-button-container">
@@ -142,6 +144,8 @@
                 </div>
             </header>
             <!-- end of header -->
+        </div>
+        <div class="main-container">
             <!-- hero section -->
             <section class="hero-container">
                 <div class="hero-content">
@@ -165,10 +169,12 @@
                                 <span>varlıklar</span>
                             </span>
                         </div>
-                        <button class="hero-button">
-                            Ücretsiz demoyu deneyin
-                            <img src="https://tr.expertoption.com/img/icons/arrow-right-btn-white.svg" style="width: 14px; height: 14px;">
-                        </button>
+                        <a href="https://app.expertoption.com/">
+                            <button class="hero-button">
+                                Ücretsiz demoyu deneyin
+                                <img src="https://tr.expertoption.com/img/icons/arrow-right-btn-white.svg" style="width: 14px; height: 14px;">
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -369,79 +375,127 @@
         <!-- chat modal -->
         <div class="chat-modal-container">
             <div class="chat-modal-header">
-                <div>
-                    
-                </div>
-                <div >Support</div>
+                <div></div>
+                <div>Support</div>
                 <div class="chat-modal-header-icons">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-arrow-up-right"
+                        viewBox="0 0 16 16"
+                    >
                         <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-lg chat-modal-close-icon" viewBox="0 0 16 16">
+                    </svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        fill="currentColor"
+                        class="bi bi-x-lg chat-modal-close-icon"
+                        viewBox="0 0 16 16"
+                    >
                         <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                      </svg>
+                    </svg>
                 </div>
             </div>
             <div class="chat-modal-explantation">
                 <div>
-                <img src="https://v2assets.zopim.io/3GWVlz4YyqBQb8oIzky6JCjyL0eTo3MA-concierge?1565018410456" />
+                    <img src="https://v2assets.zopim.io/3GWVlz4YyqBQb8oIzky6JCjyL0eTo3MA-concierge?1565018410456">
                 </div>
                 <div class="modal-explantation-header">
                     <span>Support</span>
-                    <span >Please ask your question</span>
+                    <span>Please ask your question</span>
                 </div>
             </div>
-            <div class="chat-modal-content">flex 1</div>
+            <div class="chat-modal-content"></div>
             <div class="chat-modal-input">
-                
-                <input type="textarea" placeholder="Type your message here"/>
-                <div> 
+                <input type="textarea" placeholder="Type your message here">
+                <div>
                     <a href="#">Options</a>
                     <a href="#">Sign in</a>
                 </div>
-                
             </div>
         </div>
         <!-- end of chat modal -->
-
-
         <!-- login modal -->
         <div class="login-container">
-            <div class="login-modal-slider">slider</div>
+            <div class="login-modal-slider">
+                <div class="slides active-slide">
+                    <div class="carousel-item passive-slide">
+                        <img src="https://tr.expertoption.com/img/icons/nyse.svg"/>
+                        <h3>Hisse senedi opsiyonları</h3>
+                        <p>Dünyanın en iyi şirketlerinin hisse senedi opsiyonlarının alım satımı: Apple, Facebook, Coca-Cola ve diğerleri</p>
+                    </div>
+                    <div class="carousel-item passive-slide">
+                        <img src="https://tr.expertoption.com/img/icons/education.svg"/>
+                        <h3>Eğitim</h3>
+                        <p> Web sitemizin Eğitim bölümündeki alım satım stratejilerini kullanın veya kendinizinkini oluşturun!</p>
+                    </div>
+                    <div class="carousel-item passive-slide">
+                        <img src="https://tr.expertoption.com/img/icons/apps.svg"/>
+                        <h3>Uygulamalarımızı indir</h3>
+                        <p>ExpertOption Web, iPhone, iPad, Android, Windows ve Mac\'te kullanılabilir</p>
+                    </div>       
+                </div>
+                <div class="slider-buttons">
+                    <button class="slider-button" isActive="false" id="0"></button>
+                    <button class="slider-button" isActive="false" id="1"></button>
+                    <button class="slider-button" isActive="false" id="2"></button>
+                </div>
+            </div>
             <div class="login-modal-form">
                 <button class="login-modal-close-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg login-modal-close-icon" viewBox="0 0 16 16">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        class="bi bi-x-lg login-modal-close-icon"
+                        viewBox="0 0 16 16"
+                    >
                         <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                      </svg>
-                    </button>
-              <div class="login-modal-header-link">
-                <span style="border-color: #3388d6">Oturum aç</span>
-                <span>Gerçek Hesap</span>
-              </div>
-              <div class="login-modal-input">
-                <input type="text" placeholder="E-posta" />
-                <input type="password" placeholder="Parola" />
-                <div>
-                  <a href="/">Parolanızı mı unuttunuz?</a>
-                  <button>Oturum Aç</button>
+                    </svg>
+                </button>
+                <div class="login-modal-header-link">
+                    <span class="login-modal-tab1">Oturum aç</span>
+                    <span class="login-modal-tab2">Gerçek Hesap</span>
                 </div>
-              </div>
-              <div class="login-modal-auth-container">
-                <button style="background-color: #3b5998">
-                  <img src="https://tr.expertoption.com/img/logos/social-fb.svg" />
-                  Facebook
-                </button>
-                <button style="background-color: #ea4335">
-                  <img src="https://tr.expertoption.com/img/logos/social-gp.svg" />
-                  Google
-                </button>
-                <button style="background-color: black">
-                  <img src="https://tr.expertoption.com/img/logos/social-apple.svg" />
-                  Sign in
-                </button>
-              </div>
+                <div class="login-modal-input">
+                    <input type="text" placeholder="E-posta">
+                    <input type="password" placeholder="Parola">
+                    <div class="login-modal1-items">
+                        <a href="/">Parolanızı mı unuttunuz?</a>
+                        <button>Oturum Aç</button>
+                    </div>
+                    <div class="login-modal2-items">
+                        <div>
+                            <input type="checkbox" name="login-modal-checkbox" id="register">
+                            <label for="register">Koşulları ve şartları kabul ediyorum</label>
+                            <img src="https://tr.expertoption.com/img/icons/information-outline.svg" style="width: 18px; height: 20px;">
+                        </div>
+                        <a href="/register">
+                            <button class="modal2-button">Hesap Aç</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="login-modal-auth-container">
+                    <button style="background-color: #3b5998">
+                        <img src="https://tr.expertoption.com/img/logos/social-fb.svg">
+                        Facebook
+                    </button>
+                    <button style="background-color: #ea4335">
+                        <img src="https://tr.expertoption.com/img/logos/social-gp.svg">
+                        Google
+                    </button>
+                    <button style="background-color: black">
+                        <img src="https://tr.expertoption.com/img/logos/social-apple.svg">
+                        Sign in
+                    </button>
+                </div>
             </div>
-          </div>
+        </div>
         <!-- end of login modal -->
         <script src="./js/script.js" async defer></script>
     </body>

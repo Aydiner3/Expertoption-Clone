@@ -14,7 +14,6 @@ body {
   height: 360px;
   width: 680px;
   border-radius: 4px;
-  padding: 12px;
   font-size: 16px;
 }
 .login-modal-slider {
@@ -23,11 +22,13 @@ body {
 }
 .login-modal-form {
   flex: 1;
-  padding: 14px;
+  margin: 14px 14px 14px 2px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  border-radius: 5px;
+  z-index:99;
 }
 .login-modal-header-link {
   display: flex;
@@ -121,4 +122,87 @@ body {
   color:white;
   background-color: transparent;
   border:none;
+}
+.login-modal-slider{
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:50px;
+  gap:24px;
+  background-color:#1b2132;
+  z-index:1;
+}
+.slider-buttons {
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  position:absolute;
+  bottom:6px;
+  left:30%;
+
+}
+.slider-buttons button{
+  border:none;
+  border-radius:999px;
+  width:10px;
+  height:10px;
+  background-color:rgb(12, 16, 25);
+  cursor:pointer;
+}
+.slider-button-active{
+  background-color:#259efa !important;
+  
+}
+.carousel-item{
+  display:flex;
+  flex-direction:column;
+  justify-content:start;
+  align-items:start;
+  gap:12px;
+}
+.carousel-item h3{
+  color:white;
+  font-size:18px;
+}
+.carousel-item p{
+  color:rgb(169, 181, 203);
+  font-size:12px;
+}
+.login-modal2-items{
+  display:none;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:start;
+  align-items:center;
+  gap:6px;
+  
+}
+.login-modal2-items div{
+  display:flex;
+  justinf-content:space-around;
+  gap:80px;
+}
+.login-modal2-items div label{
+    margin-left:-68px;
+}
+.login-modal2-items div input{
+  width:20px;
+  height:20px;
+  border:1px solid rgba(47, 59, 81, 0.5);
+  background-color:rgb(32, 41, 62);
+}
+.modal2-button{
+  width:320px;
+  height:35px;
+}
+.login-modal2-items div a {
+  width:100% !important;
+}
+.passive-slide{
+  display:none;
+}
+.login-modal-slider{
+  position:relative;
 }
