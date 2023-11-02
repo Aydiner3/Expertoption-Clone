@@ -593,8 +593,112 @@ div .footer-menu-title{
 
 /* end of chat modal */
 
+/* eductaion section */
+.education-container{
+    padding-top:130px;
+    max-width:1200px;
+    margin: 0 auto;
+    color:white;
+    margin-bottom:50px;
+}
+.education-container h1{
+   font-size:46px;
+   line-height:1.2;
+   font-weight:200;
+}
+.education-card-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:36px;
+    width:100%;
+}
 
+.education-card{
+    width:42%;
+    height:180px;
+    padding:36px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    border-radius:5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size:1.17em;
+}
+.education-card a{
+    text-decoration:none;
+    color:white;
+    background-color:#259efa;
+    width:14%;
+    padding:10px 15px;
+    display:flex;
+    justify-content:center;
+    border-radius:6px;
+    font-size:14px;
+}
 
+/* end of eductaion section */
+
+/* glossary section */
+.glossary-section{
+    width:1200px;
+    margin: 0 auto;
+    padding-top:150px;
+    display:flex;
+    flex-direction:column;
+    gap:36px;
+    color:white;
+    margin-bottom:48px;
+}
+.glossary-section a{
+    text-decoration:none;  
+    color:white; 
+}
+
+.glossary-register-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 24px;
+    background-color:#1f2b4d;
+    height:96px;
+    font-size:18px;
+}
+
+.glossary-register-container a{
+    font-size:20px;
+    background-color:#259efa;
+    padding:12px 24px;
+    border-radius:8px;
+}
+.glossary-content{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+.glossary-content h1{
+    font-size:46px;
+    font-weight:200;
+}
+.glossary-item h3{
+    font-size:16px;
+    color:white;
+}
+.glossary-item p{
+    color:#a9b5cb;
+}
+
+/* end of glossary section */
+/* faq section */
+.faq-section{
+    width:1200px;
+    margin:0 auto;
+    padding-top:145px;
+    color:white;
+}
+
+/* end of faq section */
 
 
 /* media  */
@@ -713,7 +817,14 @@ div .footer-menu-title{
     .language-modal-container{
         width:100%;
     }
-    
+    .education-card{
+        width:100%;
+        margin: 0 12px;
+    }
+    .glossary-item{
+        width:100%;
+        padding:0 12px;
+    }
 }
 
 
@@ -736,6 +847,17 @@ div .footer-menu-title{
     }
     .header{
         width:100%;
+    }
+    .education-card{
+        width:80%;
+       margin:0 auto;
+    }
+    .glossary-section{
+        width:100%;
+    }
+    .faq-section{
+        width:100%;
+        margin:0 24px;
     }
     
 }
