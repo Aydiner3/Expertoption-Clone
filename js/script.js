@@ -192,3 +192,21 @@ buttons.forEach((button) => {
     activeButton(clickedButtonId);
   });
 });
+
+
+//payment policy
+const menuItems = document.querySelectorAll('.payment-nav-item');
+let activeMenuItem = menuItems[0];
+console.log(menuItems)
+
+function activeButton(event){
+    activeMenuItem.classList.remove('policy-nav-active');
+    event.target.classList.add('policy-nav-active');
+    activeMenuItem=event.target;
+    
+}
+
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', activeButton);
+  console.log(menuItem);
+});

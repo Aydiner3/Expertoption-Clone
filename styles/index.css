@@ -701,6 +701,55 @@ div .footer-menu-title{
 /* end of faq section */
 
 
+/* payment policy section */
+.payment-policy-section{
+    display:flex;
+    max-width:1200px;
+    margin: 0 auto;
+    padding-top:145px;
+    gap:36px;
+}
+.payment-nav-container{
+  flex:1;
+
+}
+.payment-nav-container ul{
+    display:flex;
+    flex-direction:column;
+    list-style-type:none;
+    gap:10px;
+    
+   
+}
+.payment-nav-container ul li{
+    width:100%;
+    display:flex;
+
+   
+}
+.payment-nav-container ul li a{
+    text-decoration:none;
+    max-width:40ch;
+    color:White;
+    background-color:#2d3651;
+    padding:12px 12px;
+    border-radius:5px;
+    border:2px solid transparent;
+    width:100%;
+    transition:all 0.35s ease;
+}
+.payment-nav-container ul li a:hover{
+   color:#259efa;
+}
+.payment-content-container{
+    display:flex;
+    flex:2;
+}
+.policy-nav-active{
+    border-left:3px solid #259efa !important;
+}
+/* end of payment policy section */
+
 /* media  */
 @media screen and (max-width: 1020px) {
     
@@ -858,6 +907,9 @@ div .footer-menu-title{
     .faq-section{
         width:100%;
         margin:0 24px;
+    }
+    .payment-policy-section{
+        width:100%;
     }
     
 }
